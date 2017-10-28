@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>trellogram</title>
+  <style>
+  h1 {
+    position:absolute;
+    display:block;
+    background-color:white;
+    z-index:9999;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius:1px;
+    padding:30px;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color:tomato;
+  margin:10%;
+  /*position:absolute;
+  top:40%;
+  left:48%;
+  transform:translate(-50%,-50%);*/
+  animation-name:shapeshift;
+  animation-duration:2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  display:inline-block;
+}
+
+@keyframes shapeshift {
+  from {
+    transform:rotate(0deg);
+    background-color:tomato;
+    border-radius:0px;
+  }
+  to {
+    transform:rotate(360deg);
+    background-color:	lightpink;
+    border-radius:50%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+</body>
+</html>

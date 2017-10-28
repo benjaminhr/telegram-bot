@@ -1,0 +1,19 @@
+{
+  "name": "trellogram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "giphy-api": "^1.2.7",
+    "node-fetch": "^1.7.3",
+    "telebot": "^1.2.3"
+  }
+}
